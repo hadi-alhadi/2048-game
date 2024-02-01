@@ -1,0 +1,68 @@
+.board-background {
+    background-color: #bbada0;
+}
+
+.cell-default {
+    background-color: #cac1b5;
+}
+
+.cell-2 {
+    background-color: #eee4da;
+}
+
+.cell-4 {
+    background: #ede0c8;
+}
+
+.cell-8 {
+    background: #f2b179;
+}
+
+.cell-16 {
+    background: #f59563;
+}
+
+.cell-32 {
+    background: #f67c5f;
+}
+
+.cell-64 {
+    background: #f65e3b;
+}
+
+.cell-128 {
+    background: #edcf72;
+}
+
+.cell-256 {
+    background: #edcc61;
+}
+
+.cell-512 {
+    background: #edc850;
+}
+
+.cell-1024 {
+    background: #edc53f;
+}
+
+.cell-2048,
+.cell-4096,
+.cell-8192 {
+    background: #edc22e;
+}
+
+
+.cell-8 p,
+.cell-16 p,
+.cell-32 p,
+.cell-64 p,
+.cell-128 p,
+.cell-256 p,
+.cell-512 p,
+.cell-1024 p,
+.cell-2048 p,
+.cell-4096 p,
+.cell-8192 p {
+    color: #fff;
+}
