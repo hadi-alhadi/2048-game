@@ -12,7 +12,7 @@ To run this project locally, follow these steps:
 - Navigate to the project directory: ``` cd 2048-game ```
 - Install dependencies: ```npm install ```
 - Start the development server: ``` npm run dev ```
-- Open your browser and navigate to http://localhost:3000 to play the game.
+- Open your browser and navigate to http://localhost:3000/2048-game to play the game.
 
 ## How to Play
 Use the arrow keys (or swipe on touch devices) to move the tiles in the desired direction.
