@@ -1,8 +1,10 @@
-// reducers.js
-
 import {Direction, initBoard, moveHorizontal, moveVertical} from "@/components/components/board/board";
 
-const initialState = {
+export type StateType = {
+    arr: number[][]
+    score:number
+}
+const initialState:StateType = {
     arr: initBoard(),
     score:0
 };

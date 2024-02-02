@@ -2,6 +2,7 @@ import {useEffect, useRef, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { moveDown, moveLeft, moveRight, moveUp } from "@/components/actions/boardActions";
 import {cloneDeep} from "lodash";
+import {StateType} from "@/components/reducers/boardReducer";
 
 export enum Direction {
     UP='UP',
@@ -116,10 +117,10 @@ export const initBoard = () => {
 
 export const Board = () => {
     const dispatch = useDispatch();
-    const arr: number[][] = useSelector(state => state.arr);
+    const arr: number[][] = useSelector((state:StateType) => state.arr);
 
     useEffect(()=> {
-        const handleKeyDown = (event) => {
+        const handleKeyDown = (event: React.KeyboardEvent) => {
             switch (event.key){
                 case 'ArrowUp':
                     dispatch(moveUp());
@@ -138,9 +139,10 @@ export const Board = () => {
             }
         }
 
-        document.addEventListener('keydown',handleKeyDown)
+        document.addEventListener('keydown', (event) => handleKeyDown(event as any));
         return () => {
-            document.removeEventListener('keydown', handleKeyDown);
+            document.removeEventListener('keydown', handleKeyDown as any);
+
         };
     }, [dispatch]);
 
